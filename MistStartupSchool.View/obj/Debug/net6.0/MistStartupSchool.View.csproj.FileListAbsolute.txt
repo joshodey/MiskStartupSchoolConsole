@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\bin\Debug\net6.0\MistStartupSchool.View.exe
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\bin\Debug\net6.0\MistStartupSchool.View.deps.json
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\bin\Debug\net6.0\MistStartupSchool.View.runtimeconfig.json
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\bin\Debug\net6.0\MistStartupSchool.View.dll
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\bin\Debug\net6.0\MistStartupSchool.View.pdb
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.AssemblyInfo.cs
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.dll
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\refint\MistStartupSchool.View.dll
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.pdb
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\MistStartupSchool.View.genruntimeconfig.cache
+C:\Users\HP\source\repos\MiskStartupSchool\MistStartupSchool.View\obj\Debug\net6.0\ref\MistStartupSchool.View.dll
