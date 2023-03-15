@@ -69,9 +69,51 @@ namespace MiskStartupSchool.Repository
             
         }
 
-        public Task<ApplicationDto> Get()
+        public async Task<ProgramDto> GetProgram(string Id)
         {
-            throw new NotImplementedException();
+            var data = await _context.application.FirstOrDefaultAsync(x => x.ApplicationId == Id);
+            if (data == null) return null;
+
+            return new ProgramDto()
+            {
+                Duration = data.Duration,
+                ProgramDescription = data.ProgramDescription,
+                ApplciationOpen = data.ApplciationOpen,
+                ApplicationClose = data.ApplicationClose,
+                ApplicationCriteria = data.ApplicationCriteria,
+                KeySkills = data.KeySkills,
+                MaxApplications = data.MaxApplications,
+                MinQualification = data.MinQualification,
+                ProgramBenefits = data.ProgramBenefits,
+                ProgramLocation = data.ProgramLocation,
+                ProgramStart = data.ProgramStart,
+                ProgramSummary = data.ProgramSummary,
+                ProgramTitle = data.ProgramTitle,
+                ProgramType = data.ProgramType
+            };
+        }
+
+        public async Task<List<ProgramDto>> GetAllProgram()
+        {
+            
+            return await _context.application.Select(x => 
+            new ProgramDto()
+            {
+                Duration = x.Duration,
+                ProgramDescription = x.ProgramDescription,
+                ApplciationOpen = x.ApplciationOpen,
+                ApplicationClose = x.ApplicationClose,
+                ApplicationCriteria = x.ApplicationCriteria,
+                KeySkills = x.KeySkills,
+                MaxApplications = x.MaxApplications,
+                MinQualification = x.MinQualification,
+                ProgramBenefits = x.ProgramBenefits,
+                ProgramLocation = x.ProgramLocation,
+                ProgramStart = x.ProgramStart,
+                ProgramSummary = x.ProgramSummary,
+                ProgramTitle = x.ProgramTitle,
+                ProgramType = x.ProgramType
+            }).ToListAsync();
         }
 
         public Task<bool> Remove(string Id)

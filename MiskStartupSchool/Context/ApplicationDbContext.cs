@@ -10,13 +10,8 @@ namespace MiskStartupSchool.Context
 
         }
 
-       // public DbSet<ProgramTemp> programTemps { get; set; }
-        public DbSet<ApplicationForm> application { get; set; }
-        //public DbSet<Education> education { get; set; }
-        //public DbSet<Experience> experience { get; set; }
-        //public DbSet<WorkFlow> workflow { get; set; }
-        //public DbSet<Stage> stage { get; set; }
-        //public DbSet<InterviewQuestions> interviewQuestions { get; set; }
+       public DbSet<ApplicationForm> application { get; set; }
+       
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -33,14 +28,9 @@ namespace MiskStartupSchool.Context
                 .ToContainer("application")
                 .HasPartitionKey(x => x.ApplicationId);
 
-            //builder.Entity<ProgramTemp>()
-            //    .ToContainer("programtemp")
-            //    .HasPartitionKey(x => x.ProgramId);
-
             builder.Entity<ApplicationForm>().OwnsMany(x => x.Educations);
             builder.Entity<ApplicationForm>().OwnsMany(x => x.Experiences);
             builder.Entity<ApplicationForm>().OwnsMany(x => x.stages).OwnsMany(x => x.InterviewQuestion);
-            //builder.Entity<Stage>().OwnsMany(x => x.InterviewQuestion);
         }
     }
 }

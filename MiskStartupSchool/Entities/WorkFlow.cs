@@ -2,7 +2,7 @@
 {
     public class WorkFlow : ProgramTemp
     {
-        public ICollection<Stage> stages { get; set; }
+        public ICollection<Stage>? stages { get; set; }
 
     }
 }

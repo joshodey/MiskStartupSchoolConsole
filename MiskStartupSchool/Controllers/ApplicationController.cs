@@ -20,5 +20,20 @@ namespace MiskStartupSchool.Controllers
         {
             return Ok(await _appRepo.Add(application));
         }
+
+        [HttpGet("get-program")]
+        public async Task<IActionResult> GetProgram(string Id)
+        {
+           var data = await _appRepo.GetProgram(Id);
+            return Ok(data);
+        }
+
+
+        [HttpGet("get-all-program")]
+        public async Task<IActionResult> GetAllProgram()
+        {
+            var data = await _appRepo.GetAllProgram();
+            return Ok(data);
+        }
     }
 }

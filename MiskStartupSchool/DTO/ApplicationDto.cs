@@ -28,6 +28,7 @@ namespace MiskStartupSchool.DTO
         public int Duration { get; set; }
         public string ProgramLocation { get; set; }
         public MinQualifications MinQualification { get; set; }
+        public int MaxApplications { get; set; }
         public ICollection<Education> Educations { get; set; }
         public ICollection<Experience> Experiences { get; set; }
         public ICollection<InterviewQuestions> Questions { get; set; }
