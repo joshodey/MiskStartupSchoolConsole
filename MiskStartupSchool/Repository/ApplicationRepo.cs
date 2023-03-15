@@ -10,12 +10,10 @@ namespace MiskStartupSchool.Repository
     public class ApplicationRepo : IApplicationRepo
     {
         readonly ApplicationDbContext _context;
-
         public ApplicationRepo(ApplicationDbContext context)
         {
             _context = context;
         }
-
         public async Task<string> Add(ApplicationDto application)
         {
             if (application == null) return null;
@@ -65,7 +63,6 @@ namespace MiskStartupSchool.Repository
                 
             }
         }
-
         public async Task<ProgramDto> GetProgram(string Id)
         {
             var data = await _context.application.FirstOrDefaultAsync(x => x.ApplicationId == Id);
@@ -89,7 +86,6 @@ namespace MiskStartupSchool.Repository
                 ProgramType = data.ProgramType
             };
         }
-
         public async Task<List<ProgramDto>> GetAllProgram()
         {
             
@@ -112,12 +108,10 @@ namespace MiskStartupSchool.Repository
                 ProgramType = x.ProgramType
             }).ToListAsync();
         }
-
         public Task<bool> Remove(string Id)
         {
             throw new NotImplementedException();
         }
-
         public async Task<bool> UpdateProgram(ProgramDto program, string Id)
         {
             var data = await _context.application.FirstOrDefaultAsync(x => x.ApplicationId == Id);

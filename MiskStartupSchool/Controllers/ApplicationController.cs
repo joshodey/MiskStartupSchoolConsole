@@ -29,7 +29,7 @@ namespace MiskStartupSchool.Controllers
         }
 
 
-        [HttpGet("get-all-program")]
+        [HttpGet("preview")]
         public async Task<IActionResult> GetAllProgram()
         {
             var data = await _appRepo.GetAllProgram();

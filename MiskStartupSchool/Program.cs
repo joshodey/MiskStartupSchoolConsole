@@ -13,6 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IApplicationRepo, ApplicationRepo>();
+builder.Services.AddScoped<IWorkflowRepo, WorkflowRepo>();
+builder.Services.AddScoped<IAppTemplate, AppTemplateRepo>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseCosmos(
