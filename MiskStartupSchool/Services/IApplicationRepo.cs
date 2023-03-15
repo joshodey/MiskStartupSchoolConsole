@@ -7,7 +7,7 @@ namespace MiskStartupSchool.Services
     {
         Task<ProgramDto> GetProgram(string Id);
         Task<List<ProgramDto>> GetAllProgram();
-        Task<bool> Update(ApplicationDto application);
+        Task<bool> UpdateProgram(ProgramDto program, string Id);
         Task<string> Add(ApplicationDto application);
         Task<bool> Remove(string Id);
     }

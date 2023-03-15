@@ -60,13 +60,10 @@ namespace MiskStartupSchool.Repository
             }
             catch (DbUpdateException ex)
             {
-                // Log the error details
+                
                return ex.InnerException?.Message;
-                //return false;
+                
             }
-
-
-            
         }
 
         public async Task<ProgramDto> GetProgram(string Id)
@@ -121,9 +118,29 @@ namespace MiskStartupSchool.Repository
             throw new NotImplementedException();
         }
 
-        public Task<bool> Update(ApplicationDto application)
+        public async Task<bool> UpdateProgram(ProgramDto program, string Id)
         {
-            throw new NotImplementedException();
+            var data = await _context.application.FirstOrDefaultAsync(x => x.ApplicationId == Id);
+
+            if (data == null) return false;
+
+            data.Duration = program.Duration;
+            data.ProgramDescription = program.ProgramDescription;
+            data.ApplciationOpen = program.ApplciationOpen;
+            data.ApplicationClose = program.ApplicationClose;
+            data.ApplicationCriteria = program.ApplicationCriteria;
+            data.KeySkills = program.KeySkills;
+            data.MaxApplications = program.MaxApplications;
+            data.MinQualification = program.MinQualification;
+            data.ProgramBenefits = program.ProgramBenefits;
+            data.ProgramLocation = program.ProgramLocation;
+            data.ProgramStart = program.ProgramStart;
+            data.ProgramSummary = program.ProgramSummary;
+            data.ProgramTitle = program.ProgramTitle;
+            data.ProgramType = program.ProgramType;
+
+            _context.Update(data);
+            return _context.SaveChanges() > 0;
         }
     }
 }

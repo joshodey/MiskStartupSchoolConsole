@@ -35,5 +35,12 @@ namespace MiskStartupSchool.Controllers
             var data = await _appRepo.GetAllProgram();
             return Ok(data);
         }
+
+        [HttpPut("update-program")]
+        public async Task<IActionResult> UpdateProgram(ProgramDto program, string Id)
+        {
+            var data = await _appRepo.UpdateProgram(program, Id);
+            return data? Ok(StatusCode(200)) : BadRequest(StatusCode(404));
+        }
     }
 }
