@@ -86,11 +86,11 @@ namespace MiskStartupSchool.Repository
                 ProgramType = data.ProgramType
             };
         }
-        public async Task<List<ProgramDto>> GetAllProgram()
+        public async Task<List<ApplicationDto>> GetAllProgram()
         {
             
             return await _context.application.Select(x => 
-            new ProgramDto()
+            new ApplicationDto()
             {
                 Duration = x.Duration,
                 ProgramDescription = x.ProgramDescription,
@@ -105,7 +105,20 @@ namespace MiskStartupSchool.Repository
                 ProgramStart = x.ProgramStart,
                 ProgramSummary = x.ProgramSummary,
                 ProgramTitle = x.ProgramTitle,
-                ProgramType = x.ProgramType
+                ProgramType = x.ProgramType,
+                IDNumber = x.IDNumber,
+                Educations = x.Educations,
+                Email = x.Email,
+                Experiences = x.Experiences,
+                FirstName = x.FirstName,
+                LastName = x.LastName,
+                Gender = x.Gender,
+                ImageUrl = x.ImageUrl,
+                Nationality = x.Nationality,
+                Phone = x.Phone,
+                Residence = x.Residence,
+                ResumeUrl = x.ResumeUrl,
+                stages = x.stages
             }).ToListAsync();
         }
         public Task<bool> Remove(string Id)

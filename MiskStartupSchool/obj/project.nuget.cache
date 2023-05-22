@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "54XSU4jUQvW3xkyLPa+0oUopnGA1kzgyGkVxXrg9Z68fTHIhnh8K++v4eq1C6D6zILQsSDyOgfSr4hWoyeedyg==",
+  "dgSpecHash": "1A15ogX34a0+SK6HvCUKtp3KZpVa7dOwC/trzUCqJYfp3Or6rgOQuyatOMso6Lto9HsG6BfCsT+Pk9G9CLyh3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\MiskStartupSchool\\MiskStartupSchool\\MiskStartupSchool.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
